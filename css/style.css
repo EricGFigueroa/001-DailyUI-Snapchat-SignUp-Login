@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke; }
+
+.container {
+  width: 480px;
+  height: 720px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15); }
+
+#home .container {
+  background-color: #fdfa31; }
+  #home .container .logo {
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #home .container .logo img {
+      width: 80px;
+      display: block;
+      margin: 0 auto; }
+  #home .container .buttons {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: red; }
+    #home .container .buttons button {
+      width: 100%;
+      font-size: 1.3rem;
+      font-family: "Montserrat", sans-serif;
+      display: block;
+      padding: 1.3rem;
+      border: none;
+      background-color: transparent;
+      transition: all 0.3s ease; }
+    #home .container .buttons #logInBtn {
+      color: #ffffff;
+      text-transform: uppercase;
+      background-color: #3db2e2; }
+      #home .container .buttons #logInBtn:hover {
+        background-color: #349bc5; }
+    #home .container .buttons #signUpBtn {
+      color: #ffffff;
+      text-transform: uppercase;
+      background-color: #ea2754; }
+      #home .container .buttons #signUpBtn:hover {
+        background-color: #ca2047; }
+
+#logIn .container {
+  background-color: #ffffff; }
+  #logIn .container .back-arrow {
+    color: #98589e;
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    transition: all 0.3s ease; }
+    #logIn .container .back-arrow:hover {
+      color: #7e4584;
+      cursor: pointer; }
+    #logIn .container .back-arrow a {
+      color: inherit; }
+  #logIn .container .form-content {
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #logIn .container .form-content h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: center; }
+    #logIn .container .form-content #logInForm {
+      margin-top: 2rem; }
+      #logIn .container .form-content #logInForm .form-list .form-list-row {
+        display: block;
+        margin-bottom: 1.5rem; }
+        #logIn .container .form-content #logInForm .form-list .form-list-row:last-child {
+          margin-bottom: 0; }
+        #logIn .container .form-content #logInForm .form-list .form-list-row label {
+          color: #b9c0c8;
+          transition: all 0.3s ease; }
+        #logIn .container .form-content #logInForm .form-list .form-list-row input {
+          width: 100%;
+          color: #272727;
+          font-size: 1.1rem;
+          padding: 0.4rem 0.1rem;
+          border: none;
+          border-bottom: solid 2px #b9c0c8;
+          background-color: transparent;
+          transition: all 0.3s ease; }
+          #logIn .container .form-content #logInForm .form-list .form-list-row input:focus {
+            border-color: #98589e; }
+    #logIn .container .form-content p {
+      color: #3db2e2;
+      font-size: 0.8rem;
+      text-align: center;
+      margin-top: 1.5rem;
+      transition: all 0.3s ease; }
+      #logIn .container .form-content p:hover {
+        color: #349bc5; }
+  #logIn .container #logInBtn {
+    width: 50%;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    padding: 1.3rem;
+    border: none;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #b9c0c8;
+    transition: all 0.3s ease; }
+    #logIn .container #logInBtn:hover {
+      cursor: pointer; }
+
+#signUp .container {
+  background-color: #ffffff; }
+  #signUp .container .back-arrow {
+    color: #98589e;
+    font-size: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    transition: all 0.3s ease; }
+    #signUp .container .back-arrow:hover {
+      color: #7e4584;
+      cursor: pointer; }
+    #signUp .container .back-arrow a {
+      color: inherit; }
+  #signUp .container .form-content {
+    width: 60%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #signUp .container .form-content h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: center; }
+    #signUp .container .form-content h3 {
+      font-size: 1.3rem;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 1.5rem; }
+    #signUp .container .form-content #signUpForm {
+      margin-top: 2rem; }
+      #signUp .container .form-content #signUpForm .form-list .form-list-row {
+        display: block;
+        margin-bottom: 1.5rem; }
+        #signUp .container .form-content #signUpForm .form-list .form-list-row:last-child {
+          margin-bottom: 0; }
+        #signUp .container .form-content #signUpForm .form-list .form-list-row label {
+          color: #b9c0c8;
+          transition: all 0.3s ease; }
+        #signUp .container .form-content #signUpForm .form-list .form-list-row input {
+          width: 100%;
+          color: #272727;
+          font-size: 1.1rem;
+          padding: 0.4rem 0.1rem;
+          border: none;
+          border-bottom: solid 2px #b9c0c8;
+          background-color: transparent;
+          transition: all 0.3s ease; }
+          #signUp .container .form-content #signUpForm .form-list .form-list-row input:focus {
+            border-color: #98589e; }
+    #signUp .container .form-content p {
+      color: #b9c0c8;
+      font-size: 0.8rem;
+      text-align: center;
+      margin-top: 1.5rem;
+      transition: all 0.3s ease; }
+      #signUp .container .form-content p span {
+        color: #3db2e2; }
+  #signUp .container #signUpBtn {
+    width: 50%;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    padding: 1.3rem;
+    border: none;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #b9c0c8;
+    transition: all 0.3s ease; }
+    #signUp .container #signUpBtn:hover {
+      background-color: #b9c0c8;
+      cursor: pointer; }

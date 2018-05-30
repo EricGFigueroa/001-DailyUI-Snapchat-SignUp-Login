@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>#001 Daily UI - Snapchat Sign In/Up</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="logIn">
+    <div class="container">
+        <div class="back-arrow">
+            <a href="index.html">
+                <i class="fas fa-angle-left"></i>
+            </a>
+        </div>
+        <div class="form-content">
+            <h2>Log In</h2>
+            <form id="logInForm">
+                <ul class="form-list">
+                    <li class="form-list-row">
+                        <label id="usernameLabel" class='input-validate'>Username or Email</label><br>
+                        <input id="usernameInput" class='input-trigger' type="text" required>
+                    </li>
+                    <li class="form-list-row">
+                        <label id="passwordLabel" class='input-validate'>Password</label><br>
+                        <input id="passwordInput" class='input-trigger' type="password" required>
+                    </li>
+                </ul>
+            </form>
+            <p>
+                Forgot your password?
+            </p>
+        </div>
+        <button id="logInBtn" type="submit">Log In</button>
+    </div>
+    <script type="text/javascript" src="app.js">
+    </script>
+</body>
+
+</html>

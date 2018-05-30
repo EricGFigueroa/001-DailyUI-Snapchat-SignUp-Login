@@ -1,0 +1,313 @@
+$yellow: #fdfa31;
+$red: #ea2754;
+$red-dark: #ca2047;
+$white: #ffffff;
+$grey: #b9c0c8;
+$blue: #3db2e2;
+$blue-dark: #349bc5;
+$purple: #98589e;
+$purple-dark: #7e4584;
+$black: #272727;
+$font: 'Montserrat', sans-serif;
+$font-reg: 400;
+$font-semi: 600;
+$font-bold: 800;
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 480px;
+    height: 720px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px rgba(0,0,0,.15);
+}
+
+#home .container {
+    background-color: $yellow;
+
+    .logo {
+        display: inline-block;
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        img {
+            width: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .buttons {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+
+        button {
+            width: 100%;
+            font-size: 1.3rem;
+            font-family: $font;
+            display: block;
+            padding: 1.3rem;
+            border: none;
+            background-color: transparent;
+            transition: all 0.3s ease;
+        }
+
+        #logInBtn {
+            color: $white;
+            text-transform: uppercase;
+            background-color: $blue;
+
+            &:hover {
+                background-color: $blue-dark;
+            }
+        }
+
+        #signUpBtn {
+            color: $white;
+            text-transform: uppercase;
+            background-color: $red;
+
+            &:hover {
+                background-color: $red-dark;
+            }
+        }
+    }
+}
+
+#logIn .container {
+    background-color: $white;
+
+    .back-arrow {
+        color: $purple;
+        font-size: 2rem;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $purple-dark;
+            cursor: pointer;
+        }
+
+        a {
+            color: inherit;
+        }
+    }
+
+    .form-content {
+        width: 60%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h2 {
+            font-size: 2rem;
+            font-weight: $font-reg;
+            text-align: center;
+        }
+
+        #logInForm {
+            margin-top: 2rem;
+
+            .form-list {
+                .form-list-row {
+                    display: block;
+                    margin-bottom: 1.5rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    label {
+                        color: $grey;
+                        transition: all 0.3s ease;
+                    }
+
+                    input {
+                        width: 100%;
+                        color: $black;
+                        font-size: 1.1rem;
+                        padding: 0.4rem 0.1rem;
+                        border: none;
+                        border-bottom: solid 2px $grey;
+                        background-color: transparent;
+                        transition: all 0.3s ease;
+
+                        &:focus {
+                            border-color: $purple;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            color: $blue;
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $blue-dark;
+            }
+        }
+    }
+
+    #logInBtn {
+        width: 50%;
+        color: $white;
+        font-size: 1.3rem;
+        font-family: $font;
+        margin: 0 auto;
+        padding: 1.3rem;
+        border: none;
+        border-radius: 100px;
+        position: absolute;
+        bottom: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $grey;
+        transition: all 0.3s ease;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+#signUp .container {
+    background-color: $white;
+
+    .back-arrow {
+        color: $purple;
+        font-size: 2rem;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: $purple-dark;
+            cursor: pointer;
+        }
+
+        a {
+            color: inherit;
+        }
+    }
+
+    .form-content {
+        width: 60%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        h2 {
+            font-size: 2rem;
+            font-weight: $font-reg;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            font-weight: $font-reg;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        #signUpForm {
+            margin-top: 2rem;
+
+            .form-list {
+                .form-list-row {
+                    display: block;
+                    margin-bottom: 1.5rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    label {
+                        color: $grey;
+                        transition: all 0.3s ease;
+                    }
+
+                    input {
+                        width: 100%;
+                        color: $black;
+                        font-size: 1.1rem;
+                        padding: 0.4rem 0.1rem;
+                        border: none;
+                        border-bottom: solid 2px $grey;
+                        background-color: transparent;
+                        transition: all 0.3s ease;
+
+                        &:focus {
+                            border-color: $purple;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            color: $grey;
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            transition: all 0.3s ease;
+
+            span {
+                color: $blue;
+            }
+        }
+    }
+
+    #signUpBtn {
+        width: 50%;
+        color: $white;
+        font-size: 1.3rem;
+        font-family: $font;
+        margin: 0 auto;
+        padding: 1.3rem;
+        border: none;
+        border-radius: 100px;
+        position: absolute;
+        bottom: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $grey;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $grey;
+            cursor: pointer;
+        }
+    }
+}
